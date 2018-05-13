@@ -34,6 +34,11 @@ class ViewController: UIViewController {
 
     }
     
+    @IBAction func cheat(_ sender: UIButton) {
+        diceImageView1.image = UIImage(named: diceArr[5])
+        diceImageView2.image = UIImage(named: diceArr[5])
+    }
+    
     func updateDiceImage () {
         randomDiceIndex1 = Int(arc4random_uniform(6))
         randomDiceIndex2 = Int(arc4random_uniform(6))
